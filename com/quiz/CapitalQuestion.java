@@ -1,6 +1,12 @@
 package com.quiz;
 
 public class CapitalQuestion extends Question {
+
+  /**
+   * Creates a CapitalQuestion instance.
+   * 
+   * @return CapitalQuestion
+   */
   public CapitalQuestion() {
     super("What is the capital of Algeria?", new String[] { "Algiers", "Cairo", "Tunis", "Rabat", "I don't know", "Back" });
   }
@@ -19,7 +25,8 @@ public class CapitalQuestion extends Question {
       default:
         System.out.println("Incorrect!");
         System.console().readLine();
-        
+
+        // ask the question again
         ask();
         break;
     }
